@@ -49,7 +49,7 @@ export default function Home() {
               className="absolute inset-0"
               onMouseEnter={() => setHoveredSlide(index)}
               onMouseLeave={() => setHoveredSlide(null)}
-            >
+            >{hoveredSlide===index && <h1>Hovered here!</h1>}
               {/* {hoveredSlide === index && <AuraEffect />} */}
             </div>
             {/* <GlitchText text={slide.title} className="absolute bottom-4 left-4 text-2xl" /> */}

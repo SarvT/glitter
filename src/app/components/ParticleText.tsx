@@ -17,6 +17,7 @@ const ParticleText: React.FC<ParticleTextProps> = ({ text }) => {
 
   return (
     <Particles
+    key={text}
       id="tsparticles"
       init={particlesInit}
       options={{
